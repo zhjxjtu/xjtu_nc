@@ -1,25 +1,15 @@
-<table class="table table-bordered">
-	<tr>
-		<td><strong>Company Name</strong></td>
-		<td><strong>Job Website</strong></td>
-		<td><strong>Industry</strong></td>
-	</tr>
-	<tr>
-		<td>Google</td>
-		<td><a href="http://www.google.com/about/jobs/" target="_blank">
-			http://www.google.com/about/jobs/</a></td>
-		<td>Internet</td>
-	</tr>
-	<tr>
-		<td>Informatica</td>
-		<td><a href="http://careers.informatica.com/" target="_blank">
-			http://careers.informatica.com/</a></td>
-		<td>Software</td>
-	</tr>
-	<tr>
-		<td>ThoughtWorks</td>
-		<td><a href="http://join.thoughtworks.com/" target="_blank">
-			http://join.thoughtworks.com/</a></td>
-		<td>Software</td>
-	</tr>
-</table>
+<%= table_start %>
+<%= table_row("Google", "http://www.google.com/about/jobs/", "Internet", "10,000 +") %>
+<%= table_row("Facebook", "https://www.facebook.com/careers/", "Internet", "1,000 - 10,000") %>
+<%= table_row("Informatica", "http://careers.informatica.com/", "Software", "1,000 - 10,000") %>
+<%= table_row("ThoughtWorks", "http://join.thoughtworks.com/", "Software", "1,000 - 10,000") %>
+<%= table_row("AT&T", "http://att.jobs/", "Communications", "10,000 +") %>
+<%= table_row("Genentech", "http://www.gene.com/gene/careers/", "Biotech", "10,000 +") %>
+<%= table_row("Cisco", "http://www.cisco.com/web/about/ac40/about_cisco_careers_home.html", "Hardware", "10,000 +") %>
+<%= table_row("Oracle", "http://www.oracle.com/us/corporate/careers/index.html", "Software", "10,000 +") %>
+<%= table_row("Adobe", "http://www.adobe.com/careers.html", "Software", "1,000 - 10,000") %>
+<%= table_row("VMware", "http://www.vmware.com/jobs/", "Software", "10,000 +") %>
+<%= table_row("EMC", "http://www.emc.com/corporate/jobs/index.htm", "Software/Hardware", "10,000 +") %>
+<%= table_row("salesforce.com", "http://www.salesforce.com/careers/main/", "Software", "1,000 - 10,000") %>
+
+<%= table_end %>
