@@ -2,7 +2,7 @@ module ApplicationHelper
 	def table_start ()
 		"<table class='table table-bordered'>
 			<tr>
-				<td><strong>Company with Alumni Access</strong></td>
+				<td><strong>Company in Alumni Network</strong></td>
 				<td><strong>Job Website</strong></td>
 				<td><strong>Industry</strong></td>
 				<td><strong>Employee</strong></td>
