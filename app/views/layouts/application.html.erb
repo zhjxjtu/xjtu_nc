@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>XJTU_NC Careet Site</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <title>XJTU_NC Alumni Job Referral</title>
+  <%= stylesheet_link_tag    "application", :media=> "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %>  
 </head>
+
 <body>
-
-<%= yield %>
-
+  <%= render 'layouts/header' %>
+  <br>
+  <div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span3">
+      <h3>Need an Alumni Referral?</h3>
+      <br><br>
+      <address>
+      	<h5>Please send your Resume to:</h5>
+      	<br>Jin Zhang: zhangjin2004@gmail.com
+      	<br>Ping li: pingsj@gmail.com<br>
+      </address>
+    </div>
+    <div class="span8">
+      <%= yield %>
+    </div>
+  </div>
+  </div>
+  <%# render 'layouts/footer' %>
 </body>
 </html>
