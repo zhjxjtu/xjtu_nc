@@ -1,5 +1,6 @@
 XjtuNc::Application.routes.draw do
   root to: 'static_pages#home'
+  match '/submission',    to: 'static_pages#submission'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

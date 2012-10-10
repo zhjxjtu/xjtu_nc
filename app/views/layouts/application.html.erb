@@ -16,7 +16,7 @@
     <div class="span3">
       <h3>Need an Alumni Referral?</h3>
       <br><br>
-      <address>
+      <!--<address>
       	<strong>Please send your Resume to:</strong><br>
       	<br><strong>XJTU-NC: </strong><u>xjtusv@gmail.com</u><br>
       	<br><br><strong>Be sure to include in your email:</strong><br>
@@ -24,9 +24,53 @@
       	<br>- The <u>job #</u> you apply
       	<br>- The <u>web page link</u> of the job
       	<br>- Your <u>contact information</u>
-      </address>
+      </address>-->
+      <form class="pull-left" action="/submission">
+        <div class="control-group">
+          <label class="control-label" for="inputCompany">Company you apply</label>
+          <select>
+            <option value="Adobe">Adobe</option>
+            <option value="ATandT">AT&T</option>
+            <option value="Chevron">Chevron</option>
+            <option value="Cisco">Cisco</option>
+            <option value="Dell">Dell</option>
+            <option value="EMC">EMC</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Genentech">Genentech</option>
+            <option value="Google">Google</option>
+            <option value="HP">HP</option>
+            <option value="Informatica">Informatica</option>
+            <option value="Oracle">Oracle</option>
+            <option value="salesforce">salesforce.com</option>
+            <option value="ThoughtWorks">ThoughtWorks</option>
+            <option value="VMware">VMware</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="inputJobID">Job ID</label>
+          <div class="controls">
+            <input type="text" id="inputJobID" placeholder="Job ID">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="inputLink">Web link to the job</label>
+          <div class="controls">
+            <input type="text" id="inputLink" placeholder="Paste the web link of the job here">
+          </div>
+        </div>
+        <div class="control-group">
+          <text class="control-label" for="inputResume">Resume</label>
+          <div class="controls">
+            <textarea rows="5" placeholder="Paste your resume here, be sure to include your contact information"></textarea>
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="controls">
+            <button type="submit" class="btn">Submit</button>
+          </div>
+        </div>
       <br>
-      <h4><a href="https://sites.google.com/site/xjtusv/about-xjtu-nc" target='_blank'>XJTU-NC: Home Page</a></h4>
+      </form>
     </div>
     <div class="span8">
       <%= yield %>
